@@ -1,25 +1,19 @@
 // 1. Simple Stuff
-let num = [1, 2, 3];
-
-function getFirstValue() {
+function getFirstValue(num) {
   return num[0];
 }
-console.log(getFirstValue());
+console.log(getFirstValue([1, 2, 3]));
 
 // 2. Fix the Bugs
-let num2 = [1, 2, 3];
-
 function incrementItems(num2) {
   return num2.map((num2) => num2 + 1);
 }
-console.log(incrementItems(num2));
+console.log(incrementItems([1, 2, 3]));
 
 // 3. Rotate an Array
-let num3 = [1, 2, 3];
-
 function rotate(arr, reverse) {
   if (reverse) arr.unshift(arr.pop());
   else arr.push(arr.shift());
   return arr;
 }
-console.log(rotate(num3));
+console.log(rotate([1, 2, 3]));
